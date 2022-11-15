@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="credit-card-front">
+    <div class="credit-card-logo">
+      <img src="/assets/mastercard.svg" alt="Mastercard Logo">
+    </div>
+    <div class="credit-card-number">
+      <strong>{{ dadosCartao.numero || '0000 0000 0000 0000' }}</strong>
+    </div>
+    <div class="credit-card-data">
+      <p class="name">
+        {{ dadosCartao.nome || 'Arthur Aguiar' }}
+      </p>
+      <strong class="expiration-date">
+        {{ dadosCartao.mes || '00' }}/{{ dadosCartao.ano || '00'}}
+      </strong>
+    </div>
+  </div>
+
+  <div class="credit-card-back">
+    <div class="line"></div>
+    <div class="cvc">
+      <strong>{{ dadosCartao.cvc || '000'}}</strong>
+    </div>
+  </div>
+</div>
